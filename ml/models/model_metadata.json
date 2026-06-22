@@ -1,0 +1,18 @@
+{
+  "model_name": "LogisticRegression",
+  "trained_at": "2026-06-20T15:40:01.751235",
+  "selected_features": [
+    "cibil_score"
+  ],
+  "metrics": {
+    "model": "LogisticRegression",
+    "accuracy": 0.9649,
+    "precision": 0.9902,
+    "recall": 0.9529,
+    "f1": 0.9712,
+    "roc_auc": 0.9706,
+    "cv_auc_mean": 0.9567,
+    "cv_auc_std": 0.008
+  },
+  "version": "1.0.0"
+}

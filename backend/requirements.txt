@@ -1,0 +1,30 @@
+# ================================================================
+# Myanmar Loan Management System — Production Requirements
+# ================================================================
+
+# ── Django backend ───────────────────────────────────────────────
+Django==4.2.9
+djangorestframework==3.15.1
+djangorestframework-simplejwt==5.3.1
+django-cors-headers==4.3.1
+django-filter==23.5
+django-redis==5.4.0
+psycopg2-binary
+gunicorn==21.2.0
+whitenoise==6.6.0
+
+# ── Async tasks ──────────────────────────────────────────────────
+celery[redis]==5.3.6
+redis==5.0.1
+
+# ── Machine Learning ─────────────────────────────────────────────
+numpy
+pandas
+scikit-learn
+xgboost
+joblib
+imbalanced-learn     # optional: SMOTE for class imbalance
+
+# ── Monitoring / Utilities ───────────────────────────────────────
+python-dotenv==1.0.0
+sentry-sdk[django]==1.39.1
