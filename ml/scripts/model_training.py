@@ -183,7 +183,7 @@ def save_best_model(
     # Metadata
     meta = {
         "model_name":         best_name,
-        "trained_at":         datetime.utcnow().isoformat(),
+        "trained_at":         datetime.now(datetime.UTC).isoformat(),
         "selected_features":  selected_features,
         "metrics":            metrics,
         "version":            "1.0.0",
@@ -196,7 +196,7 @@ def save_best_model(
     # Versioned backup
     version_dir = MODELS_DIR / "versions"
     version_dir.mkdir(exist_ok=True)
-    ts = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+    ts = datetime.now(datetime.UTC).strftime("%Y%m%d_%H%M%S")
     versioned = version_dir / f"loan_model_{ts}.joblib"
     joblib.dump(model, versioned)
     print(f"[Save] Versioned → {versioned}")
@@ -244,7 +244,7 @@ if __name__ == "__main__":
     import sys
     sys.path.insert(0, str(Path(__file__).parent))
 
-    kaggle_csv = DATA_DIR / "loan_approval_dataset.csv"
+    kaggle_csv = DATA_DIR / "myanmar_loan_mock_data.csv"
     if kaggle_csv.exists():
         train_all(str(kaggle_csv))
     else:

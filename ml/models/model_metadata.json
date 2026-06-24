@@ -1,18 +1,36 @@
 {
   "model_name": "LogisticRegression",
-  "trained_at": "2026-06-20T15:40:01.751235",
+  "trained_at": "2026-06-23T15:58:10.168377",
   "selected_features": [
-    "cibil_score"
+    "income_average",
+    "loan_to_income_ratio",
+    "debt_to_income_ratio",
+    "requested_amount",
+    "category_id",
+    "ownership_exists",
+    "business_license_exists",
+    "customer_stability_score",
+    "has_form_7",
+    "land_size_acre",
+    "seasonal_income",
+    "seasonal_income_ratio",
+    "has_business_license",
+    "years_in_business",
+    "daily_cash_flow",
+    "monthly_cash_flow",
+    "cashflow_to_loan_ratio",
+    "has_collateral",
+    "salary_to_installment"
   ],
   "metrics": {
     "model": "LogisticRegression",
-    "accuracy": 0.9649,
-    "precision": 0.9902,
-    "recall": 0.9529,
-    "f1": 0.9712,
-    "roc_auc": 0.9706,
-    "cv_auc_mean": 0.9567,
-    "cv_auc_std": 0.008
+    "accuracy": 0.9208,
+    "precision": 1.0,
+    "recall": 0.8939,
+    "f1": 0.944,
+    "roc_auc": 0.9863,
+    "cv_auc_mean": 0.9585,
+    "cv_auc_std": 0.0187
   },
   "version": "1.0.0"
 }

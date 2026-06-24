@@ -202,3 +202,36 @@ class RiskScore(models.Model):
 
     def __str__(self):
         return f"Risk: {self.risk_level} ({self.score}) for loan #{self.history_id}"
+
+
+class AgriculturalProfile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="agriculture_profile")
+    has_form_7 = models.BooleanField(default=False)
+    land_size_acre = models.DecimalField(max_digits=5, decimal_places=2, default=0.00)
+    seasonal_income = models.DecimalField(max_digits=15, decimal_places=2, default=0.00)
+    # ❌ max_digits=100 ကို max_length=100 ဟု ပြင်ပါ
+    crop_type = models.CharField(max_length=100, blank=True)
+
+    class Meta:
+        db_table = "agriculture_profile_table"
+
+class MSMEProfile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="msme_profile")
+    has_business_license = models.BooleanField(default=False)
+    years_in_business = models.DecimalField(max_digits=4, decimal_places=1, default=0.0)
+    daily_cash_flow = models.DecimalField(max_digits=15, decimal_places=2, default=0.00)
+    # ❌ max_digits=100 ကို max_length=100 ဟု ပြင်ပါ
+    business_type = models.CharField(max_length=100, blank=True)
+
+    class Meta:
+        db_table = "msme_profile_table"
+
+class ConsumerProfile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="consumer_profile")
+    fixed_monthly_salary = models.DecimalField(max_digits=15, decimal_places=2, default=0.00)
+    has_collateral = models.BooleanField(default=False)
+    # ❌ max_digits=255 ကို max_length=255 ဟု ပြင်ပါ
+    consumer_purpose = models.CharField(max_length=255, blank=True)
+
+    class Meta:
+        db_table = "consumer_profile_table"

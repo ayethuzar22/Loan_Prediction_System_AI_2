@@ -1,0 +1,6 @@
+[2026-06-24 00:17:46,278] INFO loan_app.services [Service] Loaded DB data for user 1, category 1
+[2026-06-24 00:20:51,408] INFO loan_app.services [Service] Loaded DB data for user 1, category 1
+[2026-06-24 00:20:51,409] DEBUG loan_app.services [Service] Feature vector (55 features) built.
+[2026-06-24 00:21:06,709] INFO loan_app.services LoanPredictor loaded.
+[2026-06-24 00:22:39,360] INFO loan_app.services [Service] Loaded DB data for user 1, category 2
+[2026-06-24 00:22:39,362] INFO loan_app.services [Service] Guardrail rejection for user 1: ['MSME loans require a valid business registration/license.']

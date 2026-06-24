@@ -1166,3 +1166,53 @@ ImportError: Could not import 'loan_app.exceptions.custom_exception_handler' for
 [2026-06-22 01:19:23,186] WARNING django.server "GET / HTTP/1.1" 404 179
 [2026-06-22 01:19:23,447] WARNING django.request Not Found: /
 [2026-06-22 01:19:23,450] WARNING django.server "GET / HTTP/1.1" 404 179
+[2026-06-24 00:17:46,278] INFO loan_app.services [Service] Loaded DB data for user 1, category 1
+[2026-06-24 00:20:51,408] INFO loan_app.services [Service] Loaded DB data for user 1, category 1
+[2026-06-24 00:20:51,409] DEBUG loan_app.services [Service] Feature vector (55 features) built.
+[2026-06-24 00:21:06,709] INFO loan_app.services LoanPredictor loaded.
+[2026-06-24 00:22:39,360] INFO loan_app.services [Service] Loaded DB data for user 1, category 2
+[2026-06-24 00:22:39,362] INFO loan_app.services [Service] Guardrail rejection for user 1: ['MSME loans require a valid business registration/license.']
+[2026-06-24 16:29:12,941] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-06-24 16:32:51,630] INFO django.utils.autoreload D:\loan_system\backend\loan_app\services.py changed, reloading.
+[2026-06-24 16:33:06,011] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-06-24 16:34:02,286] INFO django.utils.autoreload D:\loan_system\backend\loan_app\services.py changed, reloading.
+[2026-06-24 16:34:08,516] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-06-24 16:34:21,405] INFO django.utils.autoreload D:\loan_system\backend\loan_app\services.py changed, reloading.
+[2026-06-24 16:34:31,741] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-06-24 16:34:49,438] INFO django.utils.autoreload D:\loan_system\backend\loan_app\services.py changed, reloading.
+[2026-06-24 16:34:57,330] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-06-24 16:38:42,426] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-06-24 16:40:46,781] INFO django.utils.autoreload D:\loan_system\backend\loan_app\views.py changed, reloading.
+[2026-06-24 16:40:46,708] INFO django.utils.autoreload D:\loan_system\backend\loan_app\views.py changed, reloading.
+[2026-06-24 16:40:49,373] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-06-24 16:40:49,866] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-06-24 16:41:30,153] INFO django.utils.autoreload D:\loan_system\backend\loan_app\views.py changed, reloading.
+[2026-06-24 16:41:30,872] INFO django.utils.autoreload D:\loan_system\backend\loan_app\views.py changed, reloading.
+[2026-06-24 16:41:32,699] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-06-24 16:41:33,279] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-06-24 16:42:06,535] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-06-24 16:45:11,193] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-06-24 16:45:32,775] WARNING django.request Not Found: /
+[2026-06-24 16:45:32,779] WARNING django.server "GET / HTTP/1.1" 404 179
+[2026-06-24 16:45:33,534] WARNING django.request Not Found: /
+[2026-06-24 16:45:33,537] WARNING django.server "GET / HTTP/1.1" 404 179
+[2026-06-24 16:45:34,584] WARNING django.request Not Found: /favicon.ico
+[2026-06-24 16:45:34,586] WARNING django.server "GET /favicon.ico HTTP/1.1" 404 179
+[2026-06-24 16:47:28,807] WARNING django.request Not Found: /api/
+[2026-06-24 16:47:28,809] WARNING django.server "GET /api/ HTTP/1.1" 404 179
+[2026-06-24 16:47:43,166] INFO django.server "GET /admin/ HTTP/1.1" 302 0
+[2026-06-24 16:47:43,755] INFO django.server "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4183
+[2026-06-24 16:47:43,792] WARNING django.request Not Found: /static/admin/css/base.css
+[2026-06-24 16:47:43,796] WARNING django.request Not Found: /static/admin/css/dark_mode.css
+[2026-06-24 16:47:43,802] WARNING django.request Not Found: /static/admin/css/nav_sidebar.css
+[2026-06-24 16:47:43,804] WARNING django.server "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+[2026-06-24 16:47:43,805] WARNING django.server "GET /static/admin/css/base.css HTTP/1.1" 404 179
+[2026-06-24 16:47:43,806] WARNING django.server "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+[2026-06-24 16:47:43,902] WARNING django.request Not Found: /static/admin/css/login.css
+[2026-06-24 16:47:43,905] WARNING django.request Not Found: /static/admin/css/responsive.css
+[2026-06-24 16:47:43,908] WARNING django.request Not Found: /static/admin/js/theme.js
+[2026-06-24 16:47:43,912] WARNING django.request Not Found: /static/admin/js/nav_sidebar.js
+[2026-06-24 16:47:43,913] WARNING django.server "GET /static/admin/css/login.css HTTP/1.1" 404 179
+[2026-06-24 16:47:43,921] WARNING django.server "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+[2026-06-24 16:47:43,922] WARNING django.server "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+[2026-06-24 16:47:43,924] WARNING django.server "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
