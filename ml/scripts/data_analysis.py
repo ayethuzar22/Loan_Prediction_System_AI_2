@@ -92,7 +92,7 @@ def analyze_features(df: pd.DataFrame):
 
 if __name__ == "__main__":
     # Example usage - point to your downloaded Kaggle CSV
-    kaggle_path = DATA_DIR / "loan_approval_dataset.csv"
+    kaggle_path = DATA_DIR / "myanmar_loan_mock_data.csv"
     if kaggle_path.exists():
         df = load_kaggle_data(str(kaggle_path))
         analyze_features(df)

@@ -20,7 +20,7 @@ class Command(BaseCommand):
             "--kaggle-csv",
             type=str,
             default=None,
-            help="Path to Kaggle training CSV (default: ml/data/loan_approval_dataset.csv)",
+            help="Path to Kaggle training CSV (default: ml/data/myanmar_loan_mock_data.csv)",
         )
         parser.add_argument(
             "--dry-run",
